@@ -21,14 +21,15 @@ main {
 #logo {
     width: 100px;
     height: 20.89px;
-    /* position: absolute; */
-    margin: 2em 0 .5em 2em;
+    position: relative;
+    margin: 1.5em auto auto auto;
+    padding: 0 13em .5em 0;
 }
 
 #hero {
     width: 376px;
     height: 250px;
-    margin: 5em auto auto auto;
+    margin: 1.2em auto auto auto;
 }
 
 h1, h2, p {
