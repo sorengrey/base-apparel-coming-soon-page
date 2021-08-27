@@ -5,37 +5,36 @@ html, body {
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 main {
-    margin: auto;
-    width: 100%;
     background: linear-gradient(135deg, #FFFFFF 100%, #FFF4F4 100%);
     display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 #logo {
     width: 100px;
     height: 20.89px;
-    left: 32px;
-    top: 31px;
+    /* position: absolute; */
+    margin: 2em 0 .5em 2em;
 }
 
 #hero {
     width: 376px;
     height: 250px;
-    left: -1px;
-    top: 84px;
+    margin: 5em auto auto auto;
 }
 
 h1, h2, p {
     text-align: center;
 }
 
-h1, h2, img, p, input, .button {
-    position: absolute;
-}
 
 h1, h2 {
     font-size: 40px;
@@ -48,20 +47,15 @@ h1 {
     color: #CE9898;
     font-weight: 300;
     height: 42px;
-    left: 0%;
-    right: 0%;
-    top: calc(50% - 42px/2 - 42px);
-    width: 100%;
+    padding: 0;
+    margin: 1em 0 0 0;
 }
 
 h2 {
     font-weight: 600;
     height: 84px;
-    left: 0%;
-    right: 0%;
-    top: calc(50% - 84px/2 + 21px);
     width: 100%;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 p {
@@ -72,6 +66,7 @@ p {
     height: 88px;
     left: 32px;
     top: 510px;
+    padding-bottom: 1.1em;
 }
 
 .text {
@@ -87,7 +82,8 @@ input {
     top: 640px;
     border-radius: 28px;
     border: 1px solid #CE9898;
-    padding-left: 14px;
+    padding-left: 16px;
+    z-index: 0;
 }
 
 ::placeholder {
@@ -103,12 +99,12 @@ input {
     background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
     box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
     border-radius: 28px;
-    height: 51px;
+    height: 52px;
     width: 100%;
     max-width: 68px;
-    right: 26px;
-    top: 640px;
     border: none;
+    margin: -3.2em 0 0 15.57em;
+    position: absolute;
 }
 
 #arrow {
@@ -122,15 +118,14 @@ input {
 .exclamation {
     color: #FFFFFF;
     background-color: #F96464;
-    position: absolute;
-    right: 102px;
-    top: 652px;
     border-radius: 50%;
     width: 25px;
     height: 19px;
     text-align: center;
-    padding-top: 6px;
+    padding-top: 6.2px;
     display: none;
+    margin: -2.5em 0 0 13.5em;
+    position: absolute;
 }
 
 .error {
@@ -138,11 +133,10 @@ input {
     position: absolute;
     width: 165px;
     height: 13px;
-    left: 47px;
-    top: 704px;
     line-height: 13px;
     font-size: 13px;
     display: none;
+    margin: .7em 0 0 1em;
 }
 
 .attribution {
