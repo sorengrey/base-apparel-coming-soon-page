@@ -119,6 +119,10 @@ input {
     bottom: 31.93%;
 }
 
+/* #email:focus {
+    padding-left: 2em;
+} */
+
 .error {
     color: #F96464;
     position: absolute;
