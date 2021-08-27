@@ -7,6 +7,8 @@ function checkEmail(value) {
     // if value is not an email address, unhide the red error text
     if(!re.test(value)){
         var errorMsg = document.querySelector('.error');
+        var exPoint = document.querySelector('.exclamation');
         errorMsg.style.display = "block";
+        exPoint.style.display = "block";
     }
 }

@@ -81,10 +81,10 @@ p {
 }
 
 input {
-    width: 300px;
+    width: 298px;
     height: 48px;
     left: 32px;
-    top: 665px;
+    top: 640px;
     border-radius: 28px;
     border: 1px solid #CE9898;
     padding-left: 14px;
@@ -97,7 +97,6 @@ input {
     color: #CE9898;
     opacity: 50%;
     font-family: 'Josefin Sans', sans-serif;
-    /* padding-left: 14px; */
 }
 
 .button {
@@ -107,8 +106,8 @@ input {
     height: 51px;
     width: 100%;
     max-width: 68px;
-    right: 23px;
-    top: 665px;
+    right: 26px;
+    top: 640px;
     border: none;
 }
 
@@ -120,13 +119,28 @@ input {
     bottom: 31.93%;
 }
 
+.exclamation {
+    color: #FFFFFF;
+    background-color: #F96464;
+    position: absolute;
+    right: 102px;
+    top: 652px;
+    border-radius: 50%;
+    width: 25px;
+    height: 19px;
+    text-align: center;
+    padding-top: 6px;
+    display: none;
+}
+
 .error {
     color: #F96464;
     position: absolute;
     width: 165px;
     height: 13px;
-    left: 50px;
-    top: 724px;
+    left: 47px;
+    top: 704px;
+    line-height: 13px;
     font-size: 13px;
     display: none;
 }
