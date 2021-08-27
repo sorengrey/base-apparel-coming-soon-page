@@ -81,12 +81,13 @@ p {
 }
 
 input {
-    width: 311px;
+    width: 300px;
     height: 48px;
     left: 32px;
     top: 665px;
     border-radius: 28px;
     border: 1px solid #CE9898;
+    padding-left: 14px;
 }
 
 ::placeholder {
@@ -96,7 +97,7 @@ input {
     color: #CE9898;
     opacity: 50%;
     font-family: 'Josefin Sans', sans-serif;
-    padding-left: 14px;
+    /* padding-left: 14px; */
 }
 
 .button {
@@ -118,10 +119,6 @@ input {
     top: 31.25%;
     bottom: 31.93%;
 }
-
-/* #email:focus {
-    padding-left: 2em;
-} */
 
 .error {
     color: #F96464;
