@@ -2,7 +2,6 @@ html, body {
     height: 100%;
     margin: 0;
 }
-
 body {
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
@@ -10,40 +9,38 @@ body {
     flex-direction: column;
     margin: auto;
 }
-
 main {
     background: linear-gradient(135deg, #FFFFFF 100%, #FFF4F4 100%);
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-
 #logo {
     width: 100px;
     height: 20.89px;
-    position: relative;
     margin: 1.5em auto auto auto;
     padding: 0 13em .5em 0;
 }
-
 #hero {
     width: 376px;
     height: 250px;
     margin: 1.2em auto auto auto;
 }
-
+#hero2 {
+    display: none;
+}
+.button, #arrow, .exclamation, .error {
+    position: absolute;
+}
 h1, h2, p {
     text-align: center;
 }
-
-
 h1, h2 {
     font-size: 40px;
     text-transform: uppercase;
     line-height: 42px;
     letter-spacing: 10.83px;
 }
-
 h1 {
     color: #CE9898;
     font-weight: 300;
@@ -51,14 +48,12 @@ h1 {
     padding: 0;
     margin: 1em 0 0 0;
 }
-
 h2 {
     font-weight: 600;
     height: 84px;
     width: 100%;
     margin: 0;
 }
-
 p {
     color: #CE9898;
     font-size: 14px;
@@ -69,13 +64,11 @@ p {
     top: 510px;
     padding-bottom: 1.1em;
 }
-
 .text {
     width: 100%;
     margin: auto;
     max-width: 311px;
 }
-
 input {
     width: 298px;
     height: 48px;
@@ -86,7 +79,6 @@ input {
     padding-left: 16px;
     z-index: 0;
 }
-
 ::placeholder {
     font-weight: 400;
     font-size: 14px;
@@ -95,7 +87,6 @@ input {
     opacity: 50%;
     font-family: 'Josefin Sans', sans-serif;
 }
-
 .button {
     background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
     box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
@@ -105,17 +96,13 @@ input {
     max-width: 68px;
     border: none;
     margin: -3.2em 0 0 15.57em;
-    position: absolute;
 }
-
 #arrow {
-    position: absolute;
     left: 49%;
     right: 8.73%;
     top: 31.25%;
     bottom: 31.93%;
 }
-
 .exclamation {
     color: #FFFFFF;
     background-color: #F96464;
@@ -126,12 +113,9 @@ input {
     padding-top: 6.2px;
     display: none;
     margin: -2.5em 0 0 13.5em;
-    position: absolute;
 }
-
 .error {
     color: #F96464;
-    position: absolute;
     width: 165px;
     height: 13px;
     line-height: 13px;
@@ -139,7 +123,68 @@ input {
     display: none;
     margin: .7em 0 0 1em;
 }
-
 .attribution {
     display: none;
+}
+
+@media only screen and (min-width: 500px){
+    main {
+        display: flex;
+        flex-direction: row;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-position: top left;
+        background-repeat: no-repeat;
+        /* width: 100%; */
+        /* width: 830px; */
+        /* margin: auto; */
+    }
+    #logo {
+        width: 158px;
+        height: 33px;
+        padding: 3.3em 0 0 8em;
+        margin: 0;
+    }
+    .text {
+        margin: 8em 4em 0 -10em;
+        width: 445px;
+        height: 404px;
+        padding-right: 8em;
+        float: left;
+    }
+    h1, h2 {
+        text-align: left;
+        font-size: 62px;
+        letter-spacing: 17.32px;
+    }
+    h1 {
+        line-height: 62px;
+        margin-bottom: 22px;
+    }
+    h2 {
+        line-height: 71px;
+        margin-bottom: 1em;
+    }
+    p {
+        text-align: left;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        margin: 3em 0 .5em 0;
+        width: 444px;
+    }
+    #hero {
+        display: none;
+    }
+    #hero2 {
+        display: flex;
+        height: 800px;
+        width: 610px;
+    }
+    input {
+        width: 420px;
+    }
+    .button {
+        max-width: 95px;
+        margin: -3.2em 0 0 21.8em;
+    }
 }
