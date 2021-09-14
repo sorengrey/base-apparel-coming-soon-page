@@ -89,8 +89,7 @@ input {
 }
 #arrow {
     position: absolute;
-    margin-left: 2em;
-    margin-top: 1em;
+    margin: 1em 0 0 2em;
 }
 .error {
     display: none;
@@ -140,10 +139,10 @@ input {
     #logo {
         height: 33px;
         width: 158px;
-        margin: 3em 0 1.5em 7em;
+        margin: 3.2em 0 1.5em 9em;
     }
     .text {
-        margin: 5em auto 0 -3em;
+        margin: 8em auto 0 -9.5em;
     }
     h1, h2, p {
         text-align: left;
@@ -163,5 +162,21 @@ input {
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
+        width: 444px;
+    }
+    input {
+        width: 420px;
+    }
+    .button {
+        max-width: 90px;
+        margin: -3.09em 0 0 21em;
+        cursor: pointer;
+    }
+    #arrow {
+        margin: 1em 0 0 2.5em;
+        cursor: pointer;
+    }
+    .exclamation {
+        margin: -3.6em 0 0 18.5em;
     }
 }
