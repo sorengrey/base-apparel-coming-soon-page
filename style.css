@@ -67,6 +67,7 @@ input {
     border: 1px solid #CE9898;
     height: 48px;
     padding-left: 16px;
+    color: #423A3A;
 }
 ::placeholder {
     font-weight: 400;
@@ -125,8 +126,9 @@ input {
         display: flex;
         flex-direction: row;
         background-image: url(./images/bg-pattern-desktop.svg);
-        background-position: top left;
-        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
     }
     #hero {
@@ -138,7 +140,7 @@ input {
     #logo {
         height: 33px;
         width: 158px;
-        margin: 3.4em 0 1.5em 9em;
+        margin: 3.2em 0 1.5em 9em;
     }
     .text {
         margin: 8em auto 0 -9.5em;
@@ -165,6 +167,8 @@ input {
     }
     input {
         width: 420px;
+        font-size: 16px;
+        line-height: 28px;
     }
     .button {
         max-width: 90px;
